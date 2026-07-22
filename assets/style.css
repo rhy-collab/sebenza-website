@@ -32,15 +32,15 @@ a { color: var(--navy-deep); }
 
 /* Top utility bar */
 .top-bar {
-  background: var(--navy-deep);
-  padding: 9px 0;
+  background: linear-gradient(90deg, var(--navy-deep), #123a63);
+  padding: 12px 0;
 }
 
 .top-bar .wrap {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 18px;
   flex-wrap: wrap;
   text-align: center;
 }
@@ -48,29 +48,32 @@ a { color: var(--navy-deep); }
 .top-bar p {
   margin: 0;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 13px;
-  color: #cdd7e3;
+  font-size: 14.5px;
+  color: #dbe4ee;
   letter-spacing: 0.01em;
 }
 
-.top-bar strong { color: #fff; font-weight: 600; }
+.top-bar strong { color: #fff; font-weight: 700; }
 
-.top-bar a {
+.top-bar .btn-mini {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  color: #e8c789;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--navy-deep);
   text-decoration: none;
-  border-bottom: 1px solid rgba(232,199,137,0.5);
   white-space: nowrap;
+  background: linear-gradient(180deg, #f0d9a8, #e0bd76);
+  padding: 8px 18px;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.25);
 }
 
-.top-bar a:hover { color: #fff; border-bottom-color: #fff; }
+.top-bar .btn-mini:hover { background: #f0d9a8; }
 
 /* Header */
 header.site {
   border-bottom: 1px solid var(--line);
-  padding: 12px 0;
+  padding: 14px 0;
 }
 
 header.site .wrap {
@@ -88,7 +91,7 @@ header.site .wrap {
 }
 
 .brand img {
-  height: 56px;
+  height: 92px;
   width: auto;
   display: block;
 }
@@ -630,6 +633,9 @@ footer.site nav a:hover { color: var(--navy-deep); }
   }
   nav.primary li { padding: 10px 0; border-bottom: 1px solid var(--line); }
   header.site .btn.primary { padding: 9px 16px !important; font-size: 12.5px !important; }
+  .brand img { height: 58px; }
+  .top-bar p { font-size: 12.5px; }
+  .top-bar .btn-mini { font-size: 12px; padding: 6px 14px; }
   .hero-image h1, .hero h1 { font-size: 27px; }
   .hero-image p.lede, .hero p.lede { font-size: 17px; }
   section { padding: 46px 0; }
