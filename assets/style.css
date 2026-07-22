@@ -1054,3 +1054,23 @@ p.section-intro { font-size: 16px; margin-bottom: 28px; max-width: 680px; }
   .top-bar p { display: none; }
   .top-bar .wrap { justify-content: center; }
 }
+
+/* --- Detailed program entries on Programs page --- */
+.program-list { display: flex; flex-direction: column; gap: 24px; }
+
+.program-card.program-detail { max-width: 860px; padding: 26px 28px; }
+
+.program-card.program-detail h3 { font-size: 21px; margin-bottom: 12px; }
+
+.program-card.program-detail p {
+  font-size: 15px;
+  line-height: 1.65;
+  margin: 0 0 14px;
+  color: var(--ink);
+}
+
+.program-card.program-detail p:last-child { margin-bottom: 0; }
+
+@media (max-width: 640px) {
+  .program-card.program-detail { padding: 20px 18px; }
+}
