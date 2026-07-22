@@ -971,3 +971,15 @@ header.site { padding: 8px 0; }
   font-size: 13.5px;
   color: #a9bccf;
 }
+
+/* --- Remove dead vertical space in hero --- */
+.hero-image .wrap {
+  padding-top: 30px;
+  padding-bottom: 34px;
+  align-items: start;
+  gap: 40px;
+}
+
+.hero-image h1 { font-size: 30px; max-width: 620px; }
+.hero-image p.lede { max-width: 560px; margin-bottom: 16px; }
+.hero-reassure { margin-top: 12px; }
