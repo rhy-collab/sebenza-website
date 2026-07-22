@@ -704,16 +704,10 @@ footer.site nav a:hover { color: var(--navy-deep); }
 
 .article-body p:last-child { margin-bottom: 0; }
 
-@media (max-width: 860px) {
-  .grid-3, .grid-2, .contact-block, .voice-block { grid-template-columns: 1fr; }
-  .hero h1, .hero-image h1 { font-size: 32px; }
-  .hero-image .wrap { grid-template-columns: 1fr; padding-top: 72px; padding-bottom: 76px; }
-  .hero-stats { display: none; }
-  nav.primary ul { gap: 18px; }
-  body { font-size: 17px; }
-}
-
-@media (max-width: 640px) {
+/* Header collapses to a hamburger menu from 900px down, so there's no
+   in-between width where the logo, six nav links and CTA button are all
+   forced into one row without room. */
+@media (max-width: 900px) {
   header.site .wrap { flex-wrap: nowrap; position: relative; }
   .nav-toggle { display: flex; }
   nav.primary {
@@ -737,7 +731,19 @@ footer.site nav a:hover { color: var(--navy-deep); }
   }
   nav.primary li { padding: 10px 0; border-bottom: 1px solid var(--line); }
   header.site .btn.primary { padding: 9px 16px !important; font-size: 12.5px !important; }
-  .brand img { height: 58px; }
+  .brand img { height: 64px; }
+}
+
+@media (max-width: 860px) {
+  .grid-3, .grid-2, .contact-block, .voice-block { grid-template-columns: 1fr; }
+  .hero h1, .hero-image h1 { font-size: 32px; }
+  .hero-image .wrap { grid-template-columns: 1fr; padding-top: 72px; padding-bottom: 76px; }
+  .hero-stats { display: none; }
+  body { font-size: 17px; }
+}
+
+@media (max-width: 640px) {
+  .brand img { height: 52px; }
   .top-bar p { font-size: 12.5px; }
   .top-bar .btn-mini { font-size: 12px; padding: 6px 14px; }
   .hero-image h1, .hero h1 { font-size: 27px; }
