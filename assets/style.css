@@ -852,3 +852,37 @@ a:focus-visible, button:focus-visible {
   .principal-monogram { width: 110px; height: 110px; font-size: 32px; }
   .cta-band { padding: 54px 0; }
 }
+
+/* --- Compact above-the-fold: fit top bar + header + full hero in a standard desktop viewport --- */
+.top-bar { padding: 8px 0; }
+header.site { padding: 8px 0; }
+.brand img { height: 60px; }
+
+.hero-image .wrap {
+  padding-top: 40px;
+  padding-bottom: 44px;
+  gap: 36px;
+}
+
+.hero-image .eyebrow { margin-bottom: 10px; font-size: 12px; }
+
+.hero-image h1 {
+  font-size: 33px;
+  line-height: 1.18;
+  margin-bottom: 14px;
+}
+
+.hero-image p.lede {
+  font-size: 16.5px;
+  margin-bottom: 18px;
+}
+
+.hero-image .tagline { margin-top: 16px; }
+
+.hero-stats { padding: 18px 18px; }
+.hero-stats .stat { padding: 9px 0; }
+.hero-stats .stat b { font-size: 20px; }
+
+@media (max-width: 900px) {
+  .brand img { height: 52px; }
+}
