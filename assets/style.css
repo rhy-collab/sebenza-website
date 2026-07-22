@@ -6,7 +6,7 @@
   --line: #e3e7ec;
   --paper: #fbfbfa;
   --accent: #9a7b3f;
-  --max: 1080px;
+  --max: 1160px;
 }
 
 * { box-sizing: border-box; }
@@ -157,10 +157,45 @@ nav.primary a.active {
 }
 
 .hero-image .wrap {
-  padding-top: 108px;
-  padding-bottom: 116px;
+  padding-top: 100px;
+  padding-bottom: 108px;
   position: relative;
   z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-stats {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 6px;
+  padding: 30px 26px;
+  backdrop-filter: blur(2px);
+}
+
+.hero-stats .stat {
+  padding: 16px 0;
+  border-top: 1px solid rgba(255,255,255,0.14);
+}
+
+.hero-stats .stat:first-child { border-top: none; padding-top: 0; }
+
+.hero-stats .stat b {
+  display: block;
+  font-family: "Georgia", serif;
+  font-size: 26px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.hero-stats .stat span {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  color: #a9bccf;
+  letter-spacing: 0.01em;
 }
 
 .hero-image .eyebrow {
@@ -565,7 +600,8 @@ footer.site nav a:hover { color: var(--navy-deep); }
 @media (max-width: 860px) {
   .grid-3, .grid-2, .contact-block, .voice-block { grid-template-columns: 1fr; }
   .hero h1, .hero-image h1 { font-size: 32px; }
-  .hero-image .wrap { padding-top: 72px; padding-bottom: 76px; }
+  .hero-image .wrap { grid-template-columns: 1fr; padding-top: 72px; padding-bottom: 76px; }
+  .hero-stats { display: none; }
   nav.primary ul { gap: 18px; }
   body { font-size: 17px; }
 }
