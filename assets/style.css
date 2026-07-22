@@ -210,6 +210,61 @@ nav.primary a.active {
   font-size: 13px !important;
 }
 
+/* Hero — what-you-get card (replaces stats) */
+.hero-offer {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.16);
+  border-top: 3px solid var(--accent);
+  border-radius: 6px;
+  padding: 24px 22px;
+  backdrop-filter: blur(2px);
+}
+
+.hero-offer .offer-title {
+  font-family: "Georgia", serif;
+  font-size: 19px;
+  color: #fff;
+  margin: 0 0 14px;
+}
+
+.hero-offer ul {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+.hero-offer li {
+  position: relative;
+  padding: 7px 0 7px 26px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #d7e0ea;
+}
+
+.hero-offer li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 13px;
+  width: 10px;
+  height: 6px;
+  border-left: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(-45deg);
+}
+
+.hero-offer .offer-note {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12.5px;
+  color: #a9bccf;
+  margin: 0;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.14);
+}
+
+.hero-offer .offer-note strong { color: #fff; font-weight: 600; }
+
 .hero-image .eyebrow {
   font-family: "Helvetica Neue", Arial, sans-serif;
   text-transform: uppercase;
@@ -739,6 +794,7 @@ footer.site nav a:hover { color: var(--navy-deep); }
   .hero h1, .hero-image h1 { font-size: 32px; }
   .hero-image .wrap { grid-template-columns: 1fr; padding-top: 72px; padding-bottom: 76px; }
   .hero-stats { display: none; }
+  .hero-offer { margin-top: 6px; padding: 20px 18px; }
   body { font-size: 17px; }
 }
 
