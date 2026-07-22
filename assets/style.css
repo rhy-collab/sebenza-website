@@ -886,3 +886,32 @@ header.site { padding: 8px 0; }
 @media (max-width: 900px) {
   .brand img { height: 52px; }
 }
+
+/* --- Conversion-focused hero CTA --- */
+.hero-cta-row { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+
+.btn.gold.hero-cta {
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+.btn.gold.hero-cta:hover { transform: translateY(-1px); }
+
+.hero-textlink {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  color: #cdd7e3;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.hero-textlink:hover { color: #fff; }
+
+.hero-reassure {
+  margin-top: 14px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 13.5px;
+  color: #a9bccf;
+}
