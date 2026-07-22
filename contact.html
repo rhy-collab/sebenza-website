@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — Sebenza Consulting</title>
-<meta name="description" content="Get in touch with Sebenza Consulting to discuss a governance review or capability building program.">
+<title>Book a Call — Sebenza Advisory</title>
+<meta name="description" content="Book a call with Simone O'Dowd at Sebenza Advisory to discuss governance, funding or capability building support.">
 <link rel="icon" href="/assets/favicon.png">
 <link rel="stylesheet" href="/assets/style.css">
 </head>
@@ -13,12 +13,12 @@
 <header class="site">
   <div class="wrap">
     <a class="brand" href="/">
-      <img src="/assets/logo-header.png" alt="Sebenza Consulting">
+      <img src="/assets/logo-header.png" alt="Sebenza Advisory">
     </a>
     <nav class="primary">
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/approach.html">Approach</a></li>
+        <li><a href="/approach.html">Services</a></li>
         <li><a href="/insights.html">Insights</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html" class="active">Contact</a></li>
@@ -29,35 +29,39 @@
 
 <section class="hero page-hero">
   <div class="wrap">
-    <p class="eyebrow">Contact</p>
+    <p class="eyebrow">Book a Call</p>
     <h1>Start with a conversation, not a proposal.</h1>
-    <p class="lede">Send a short note about the question you're facing. There's no obligation attached, and we'd rather understand the problem properly before suggesting how we might help.</p>
+    <p class="lede">Book a short call with Simone O'Dowd. There's no obligation attached — we'd rather understand your organisation and the question you're facing before suggesting how we might help.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap contact-block">
     <div>
-      <h2 class="section-title" style="margin-bottom:20px;">Get in touch</h2>
-      <p style="color:var(--muted);max-width:420px;">Email is the most reliable way to reach us. Let us know a little about your organisation and the governance question you're weighing up, and we'll come back to you with practical next steps.</p>
+      <h2 class="section-title" style="margin-bottom:20px;">Book a Call</h2>
+      <p style="color:var(--muted);max-width:420px;margin-bottom:26px;">Pick a time that suits you and Simone will call you directly — no forms to fill out first.</p>
+      <a class="btn primary" href="#" id="book-call-btn">Book a Call →</a>
+      <p style="color:var(--muted);font-size:14px;margin-top:14px;max-width:420px;">
+        <em>[Prototype note: wire this button to a booking link — e.g. Calendly — before launch. Currently opens email as a fallback.]</em>
+      </p>
     </div>
     <dl class="contact-detail">
       <dt>Email</dt>
-      <dd><a href="mailto:info@sebenzaconsulting.com.au">info@sebenzaconsulting.com.au</a></dd>
+      <dd><a href="mailto:simone@sebenzaadvisory.com.au">simone@sebenzaadvisory.com.au</a></dd>
       <dt>Based in</dt>
       <dd>New South Wales, Australia</dd>
       <dt>Working with</dt>
-      <dd>Government agencies and community organisations, primarily in Australia</dd>
+      <dd>Aboriginal Community Organisations, Alliances, Assemblies and government agencies across NSW</dd>
     </dl>
   </div>
 </section>
 
 <footer class="site">
   <div class="wrap">
-    <p>© 2026 Sebenza Consulting. All rights reserved.</p>
+    <p>© 2026 Sebenza Advisory. All rights reserved.</p>
     <nav>
       <ul>
-        <li><a href="/approach.html">Approach</a></li>
+        <li><a href="/approach.html">Services</a></li>
         <li><a href="/insights.html">Insights</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html">Contact</a></li>
@@ -65,6 +69,13 @@
     </nav>
   </div>
 </footer>
+
+<script>
+document.getElementById('book-call-btn').addEventListener('click', function(e){
+  e.preventDefault();
+  window.location.href = 'mailto:simone@sebenzaadvisory.com.au?subject=Booking a call with Sebenza Advisory';
+});
+</script>
 
 </body>
 </html>
