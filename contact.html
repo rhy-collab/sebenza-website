@@ -7,6 +7,7 @@
 <meta name="description" content="Book a call with Simone O'Dowd at Sebenza Advisory to discuss governance, funding or capability building support.">
 <link rel="icon" href="/assets/favicon.png">
 <link rel="stylesheet" href="/assets/style.css">
+<script src="/assets/site.js" defer></script>
 </head>
 <body>
 
@@ -19,11 +20,13 @@
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/approach.html">Services</a></li>
+        <li><a href="/programs.html">Programs</a></li>
         <li><a href="/insights.html">Insights</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
 
@@ -39,10 +42,10 @@
   <div class="wrap contact-block">
     <div>
       <h2 class="section-title" style="margin-bottom:20px;">Book a Call</h2>
-      <p style="color:var(--muted);max-width:420px;margin-bottom:26px;">Pick a time that suits you and Simone will call you directly — no forms to fill out first.</p>
-      <a class="btn primary" href="#" id="book-call-btn">Book a Call →</a>
+      <p style="color:var(--muted);max-width:420px;margin-bottom:26px;">Pick a time that suits you on Simone's calendar — no forms to fill out first.</p>
+      <a class="btn primary" href="https://calendly.com/sebenza-advisory/consultation" target="_blank" rel="noopener">Book a Call on Calendly →</a>
       <p style="color:var(--muted);font-size:14px;margin-top:14px;max-width:420px;">
-        <em>[Prototype note: wire this button to a booking link — e.g. Calendly — before launch. Currently opens email as a fallback.]</em>
+        <em>[Prototype note: placeholder Calendly link — swap in Simone's real Calendly URL before launch.]</em>
       </p>
     </div>
     <dl class="contact-detail">
@@ -62,6 +65,7 @@
     <nav>
       <ul>
         <li><a href="/approach.html">Services</a></li>
+        <li><a href="/programs.html">Programs</a></li>
         <li><a href="/insights.html">Insights</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html">Contact</a></li>
@@ -69,13 +73,6 @@
     </nav>
   </div>
 </footer>
-
-<script>
-document.getElementById('book-call-btn').addEventListener('click', function(e){
-  e.preventDefault();
-  window.location.href = 'mailto:simone@sebenzaadvisory.com.au?subject=Booking a call with Sebenza Advisory';
-});
-</script>
 
 </body>
 </html>
