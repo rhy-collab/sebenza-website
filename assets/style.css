@@ -600,6 +600,93 @@ footer.site nav a:hover { color: var(--navy-deep); }
 
 .iraac-intro p { margin: 0; font-size: 16.5px; color: #cdd7e3; }
 
+/* Insights blog list */
+.insight-list { display: flex; flex-direction: column; }
+
+.insight-card {
+  display: block;
+  padding: 34px 0;
+  border-top: 1px solid var(--line);
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s ease;
+}
+
+.insight-list a.insight-card:last-child { border-bottom: 1px solid var(--line); }
+
+.insight-card:hover { background: #f8f7f4; }
+
+.insight-card .insight-meta {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.insight-card .insight-meta .dot { color: var(--line); }
+.insight-card .insight-meta .date { color: var(--muted); letter-spacing: 0.02em; text-transform: none; }
+
+.insight-card h3 {
+  font-size: 22px;
+  color: var(--navy-deep);
+  margin: 0 0 12px;
+  font-weight: 400;
+}
+
+.insight-card p.excerpt { color: var(--muted); margin: 0 0 12px; max-width: 760px; }
+
+.insight-card .read-more {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--navy-deep);
+  letter-spacing: 0.01em;
+}
+
+.insight-card:hover .read-more { color: var(--accent); }
+
+/* Article page */
+.article-meta {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.article-meta .dot { color: var(--line); }
+.article-meta .date, .article-meta .read-time { color: var(--muted); text-transform: none; letter-spacing: 0.02em; }
+
+.back-link {
+  display: inline-block;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 13.5px;
+  color: var(--muted);
+  text-decoration: none;
+  margin-bottom: 22px;
+}
+
+.back-link:hover { color: var(--navy-deep); }
+
+.article-body { max-width: 760px; }
+
+.article-body p {
+  color: var(--ink);
+  font-size: 18px;
+  margin: 0 0 22px;
+}
+
+.article-body p:last-child { margin-bottom: 0; }
+
 @media (max-width: 860px) {
   .grid-3, .grid-2, .contact-block, .voice-block { grid-template-columns: 1fr; }
   .hero h1, .hero-image h1 { font-size: 32px; }
