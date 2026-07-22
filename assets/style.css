@@ -983,3 +983,74 @@ header.site { padding: 8px 0; }
 .hero-image h1 { font-size: 30px; max-width: 620px; }
 .hero-image p.lede { max-width: 560px; margin-bottom: 16px; }
 .hero-reassure { margin-top: 12px; }
+
+/* --- Site-wide density pass: standard desktop rhythm, tuned mobile --- */
+
+/* Base type: calmer scale */
+body { font-size: 16px; line-height: 1.6; }
+
+section { padding: 48px 0; }
+
+h2.section-title { font-size: 24px; margin-bottom: 10px; }
+
+p.section-intro { font-size: 16px; margin-bottom: 28px; max-width: 680px; }
+
+/* Service cards */
+.grid-3 { gap: 20px; }
+.card { padding: 20px 20px 22px; }
+.card h3 { font-size: 15.5px; margin-bottom: 8px; }
+.card p { font-size: 14px; line-height: 1.55; }
+.card .num { font-size: 12px; margin-bottom: 8px; }
+
+/* Voice / flow section */
+.voice-block { gap: 40px; }
+.voice-flow { padding: 22px 22px; }
+.voice-flow li { padding-bottom: 18px; font-size: 13.5px; }
+.principle { font-size: 17px; margin-bottom: 22px; padding-left: 20px; }
+
+/* Program cards */
+.grid-2 { gap: 20px; }
+.program-card { padding: 20px 20px; }
+.program-card h3 { font-size: 18px; margin-bottom: 8px; }
+.program-card p { font-size: 14px; line-height: 1.55; }
+
+/* Principal */
+.principal-block { gap: 32px; grid-template-columns: 150px 1fr; }
+.principal-monogram { width: 120px; height: 120px; font-size: 36px; }
+.principal-bio { font-size: 15.5px; }
+
+/* Insights */
+.insight-card { padding: 22px 0; }
+.insight-card h3 { font-size: 19px; margin-bottom: 8px; }
+.insight-card p.excerpt { font-size: 15px; margin-bottom: 8px; }
+
+/* Closing CTA */
+.cta-band { padding: 52px 0; }
+.cta-band h2 { font-size: 25px; }
+.cta-band p { font-size: 16px; margin-bottom: 24px; }
+
+/* Hero copy sits on the tighter scale too */
+.hero-image h1 { font-size: 29px; }
+.hero-image p.lede { font-size: 15.5px; }
+
+/* --- Mobile optimization --- */
+@media (max-width: 860px) {
+  section { padding: 36px 0; }
+  .wrap { padding: 0 20px; }
+  .hero-image .wrap { padding-top: 32px; padding-bottom: 36px; }
+  .hero-image h1 { font-size: 26px; }
+  .hero-cta-row { flex-direction: column; align-items: stretch; gap: 12px; }
+  .btn.gold.hero-cta { text-align: center; width: 100%; }
+  .hero-textlink { text-align: center; }
+  .principal-block { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  body { font-size: 15.5px; }
+  .hero-image h1 { font-size: 23px; }
+  h2.section-title { font-size: 21px; }
+  section { padding: 30px 0; }
+  .cta-band { padding: 40px 0; }
+  .top-bar p { display: none; }
+  .top-bar .wrap { justify-content: center; }
+}
